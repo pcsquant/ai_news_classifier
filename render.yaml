@@ -5,10 +5,18 @@ services:
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+
     envVars:
-      - key:d736qj1r01qn7f07qe8gd736qj1r01qn7f07qe90
+      - key: d736qj1r01qn7f07qe8gd736qj1r01qn7f07qe90
         sync: false
+
       - key: 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
         sync: false
-      - key: meta-llama/llama-3.3-70b-instruct:free
-        value: gpt-5.4-mini
+
+      - key: LLM_MODEL
+        value: meta-llama/llama-3.3-70b-instruct:free
+
+      - key: OPENAI_BASE_URL
+        value: https://openrouter.ai/api/v1
+
+
