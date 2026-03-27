@@ -6,9 +6,9 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
     envVars:
-      - key: FINNHUB_API_KEY
+      - key:d736qj1r01qn7f07qe8gd736qj1r01qn7f07qe90
         sync: false
-      - key: LLM_API_KEY
+      - key: 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
         sync: false
-      - key: LLM_MODEL
+      - key: meta-llama/llama-3.3-70b-instruct:free
         value: gpt-5.4-mini
